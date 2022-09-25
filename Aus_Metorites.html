@@ -1,0 +1,135 @@
+<!DOCTYPE HTML>
+<!--
+	Prologue by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Australian Meteorites</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+
+    <div id="header">
+
+				<div class="top">
+
+					<!-- Logo -->
+						<div id="logo">
+							<span class="image avatar48"><img src="images/avatar.jpg" alt="" /></span>
+							<h1 id="title">Georgia Moore</h1>
+							<p>Geospatial Scientist</p>
+						</div>
+
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li><a href="index.html#top" id="top-link"><span class="icon solid fa-home">Intro</span></a></li>
+								<li><a href="index.html#portfolio" id="portfolio-link"><span class="icon solid fa-th">Portfolio</span></a></li>
+								<li><a href="index.html#about" id="about-link"><span class="icon solid fa-user">About Me</span></a></li>
+								<li><a href="index.html#contact" id="contact-link"><span class="icon solid fa-envelope">Contact</span></a></li>
+							</ul>
+						</nav>
+
+				</div>
+
+				<div class="bottom">
+
+					<!-- Social Icons -->
+						<ul class="icons">
+<!--							<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>-->
+<!--							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>-->
+							<li><a href="www.linkedin.com/in/georgialmoore" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+<!--							<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>-->
+							<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+						</ul>
+
+				</div>
+    </div>
+
+
+		<!-- Main -->
+			<div id="main">
+
+				<!-- Portfolio -->
+					<section id="portfolio" class="two">
+						<div class="container">
+
+							<header>
+								<h2>Australian Meteorites</h2>
+							</header>
+
+              <div>
+
+                <a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
+
+                <h2>Design Rational</h2>
+                <p style="text-align: left;">
+                  As we have mapped places and cultural data already, for this assessment I wanted to map scientific data to expose myself to a wide
+                  range of data sets. As space is an interest of mine, and through early research of data set sources, I found that NASA has open source
+                  data. Exploring the NASA data sets led me to a comprehensive data set that originated from the Meteoritical Society and contained
+                  information on all the known meteorite landings on Earth. As the list was extensive, contained a lot of information and was continuously
+                  validated by NASA, it was concluded that this would be an accurate data set to work with. <p>
+                  <p style="text-align: left;"> After cleaning the data, I mapped all meteorites on Earth in order to become familiar with the data but became focused on Australia as
+                  there was a very interesting cluster of found meteorites which did not correlate with the rest of the distribution of meteorites in
+                  Australia.<p>
+                  <p style="text-align: left;">Knowing my data and focus area, I needed an end user in order to produce a map with clear intent and design purposes. Even though
+                  space is a focused interest of mine, I am not widely versed in meteorites nor did time allow for the investigation needed to reach that
+                  level. It is for this reason that I decided against producing a product for an end-user with expert knowledge, but an end user that was like
+                  myself. Someone that has an interest and is looking to learn more. My end user is someone with fundamental awareness to intermediate
+                  level of knowledge of Meteorites. The aim of the product is to educate, mainly through visuals with supplemental text. It is my intent that
+                  the product could be used for high school students or to be used in support of an article on the web for the general public. This gave the
+                  map direction and helped me to better make decisions to understand the map use context for the end user.</p>
+                  <p style="text-align: left;">Upon further investigation, the cluster of meteorites in Australia are located across the Nullarbor Plain. Through my general knowledge I
+                  knew the Nullarbor was very flat and had little to no vegetation. This must be the link to the cluster and decided that my main map
+                  would focus on this. To visually convey this to the end user, a terrain representation was needed. I went through iterations of NDVI maps
+                  but ended up choosing a shaded relief as the smoothness of the terrain is the main reason the meteorites are found. Shaded relief is also
+                  beneficial for small details and large landforms to be easily read and would allow the user to easily see the link. I used a raster download
+                  from Natural Earth and using the Spatial Analyst Tools, specifically Surface-Hillshade tool in ArcMap using an azimuth of 315° and altitude
+                  of 45°. I was now able to overlay my meteorite point data, which I split into fallen and found meteorites. Wanting to show as much
+                  information as possible and knowing that it is an intuitive conclusion made by people that the larger the symbol the “bigger” or in this
+                  case the heavier that point data is. This made it a logical conclusion to combine my symbols with graduated symbols to represent the
+                  mass of the meteorites.</p>
+                  <p style="text-align: left;">It was now obvious looking at the data that meteorites seen falling in Australia were very far and few between. In order to observe a fall,
+                  there needs to be people around to see it, this would mean we have a correlation between population density and visible fall. To show
+                  this, I used data from the Australian Bureau of Statistics to create a choropleth map of population density so the map user could visualize
+                  the link. But this still didn’t quite answer the whole question as Australia does have many densely populated places, so why don’t we see
+                  more of them? I conducted some research on this and found that night sky brightness is a contributing factor. For this reason, I have
+                  inserted a heat map representing the artificial night sky brightness. This was a very interesting atlas found online that was created by the
+                  Light Pollution Science and Technology Institute in Italy and they provided hi-res tiff images of the world.</p>
+                  <p style="text-align: left;">I also wanted to graph the top 10 class types of meteorites found. However, the may layout did not allow easy insertion of this bar graph.
+                  I tried many times, but realized that sometimes less is more and also that if I had to omit any data it would be this as only a small
+                  percentage of my end users would be knowledgeable in this kind of data. It was for this reason I did not include it on the map, and this
+                  was probably one of my biggest learnings during this project. You may want to communicate a vast detail of data, but it will be at the
+                  detriment of the effectiveness of your map and design. You need to select the most valuable data for your specific end user.</p>
+                </p>
+              </div>
+            </div>
+          </section>
+      </div>
+        <!-- Footer -->
+        <div id="footer">
+
+          <!-- Copyright -->
+            <ul class="copyright">
+              <li>&copy; Georgia Moore. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+            </ul>
+
+        </div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
